@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victorian Gothic Oddities — The Dollmaker's Cabinet</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0c;
+      --panel:#141214;
+      --accent:#8b5e3c;
+      --muted:#cbbfb6;
+      --gold:#c89a6b;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#070607 0%,var(--bg) 60%);color:var(--muted);font-family: 'Playfair Display', serif}
+    a{color:var(--gold);text-decoration:none}
+    header{padding:36px 6vw;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:18px}
+    .logo{width:72px;height:72px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+    .logo h1{margin:0;font-family:'Unica One',cursive;font-size:20px;color:var(--gold);letter-spacing:1px}
+    nav a{margin-left:18px;color:var(--muted);font-size:15px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:48px;padding:40px 6vw;align-items:center}
+    .hero .intro{max-width:720px}
+    .eyebrow{font-size:13px;opacity:0.7;letter-spacing:1.6px;text-transform:uppercase}
+    h2{font-size:48px;margin:8px 0 12px;color:#efe6de;line-height:1.02}
+    p.lead{color:var(--muted);margin-bottom:22px}
+    .cta-row{display:flex;gap:14px;align-items:center}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:12px 18px;border-radius:10px;color:var(--muted);cursor:pointer}
+    .btn.primary{background:linear-gradient(180deg,rgba(200,154,107,0.12),transparent);border:1px solid rgba(200,154,107,0.22);color:var(--gold);font-weight:700}
+
+    .showcase{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 30px 60px rgba(0,0,0,0.6);height:460px;position:relative;overflow:hidden}
+    .display-img{width:100%;height:100%;object-fit:cover;filter:grayscale(6%) contrast(0.95);opacity:0.98}
+    .frame{position:absolute;inset:18px;border-radius:10px;pointer-events:none;border:3px solid rgba(0,0,0,0.25);box-shadow:inset 0 40px 60px rgba(0,0,0,0.45)}
+
+    section.products{padding:40px 6vw}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .card{background:var(--panel);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .card img{width:100%;height:230px;object-fit:cover;border-radius:8px}
+    .card h3{margin:10px 0 6px;font-size:18px}
+    .meta{font-size:13px;color:#bfb0a2}
+    .price{margin-top:8px;font-weight:700;color:var(--gold)}
+    .adopt{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;background:transparent;border:1px solid rgba(200,154,107,0.14);cursor:pointer}
+
+    .split{display:grid;grid-template-columns:1fr 420px;gap:28px;padding:40px 6vw;align-items:start}
+    .journal{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:22px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    form input, form textarea{width:100%;padding:10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);margin-top:10px}
+    form button{margin-top:10px}
+
+    footer{padding:28px 6vw;border-top:1px solid rgba(255,255,255,0.02);color:#8b7a6c}
+    .ornament{font-family:'Unica One',cursive;color:var(--gold);opacity:0.95;font-size:12px}
+    .flicker{display:inline-block;transform-origin:center;animation:flicker 3.2s infinite}
+    @keyframes flicker{0%{filter:brightness(1)}50%{filter:brightness(1.18)}100%{filter:brightness(1)}}
+    @media(max-width:960px){.hero,.split{grid-template-columns:1fr;}.hero .showcase{height:360px}.logo{width:56px;height:56px}.brand h1{font-size:18px}} 
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo"><h1>VGO</h1></div>
+      <div>
+        <div class="ornament">Victorian Gothic Oddities</div>
+        <div style="font-size:12px;color:#9e8e80">Hand-crafted hauntings • Exeter, NY</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#custom">Conjure</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="intro">
+        <div class="eyebrow">Victorian Gothic Oddities</div>
+        <h2>Hand-made dolls & curios — beautifully haunted.</h2>
+        <p class="lead">Each doll is crafted from reclaimed porcelain, vintage fabrics, and whispered stories. Placed in ornate frames or wooden cabinets, our creations look like heirlooms — with secrets.</p>
+        <div class="cta-row">
+          <button class="btn primary" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Adopt a Specimen</button>
+          <button class="btn" id="soundToggle">Play Music Box</button>
+        </div>
+      </div>
+      <div class="showcase" aria-hidden="true">
+        <img src="images/placeholder-hero.jpg" alt="Victorian doll on velvet" class="display-img">
+        <div class="frame"></div>
+      </div>
+    </section>
+
+    <section id="shop" class="products">
+      <h3 style="font-size:22px;margin-bottom:8px">Available Specimens</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="images/placeholder1.jpg" alt="Lilith — Porcelain Child">
+          <h3>Lilith — Porcelain Child</h3>
+          <div class="meta">Antique lace, hand-painted face, glass eyes</div>
+          <div class="price">$240</div>
+          <button class="adopt" onclick="openAdopt('Lilith — Porcelain Child')">Adopt the Specimen</button>
+        </article>
+        <article class="card">
+          <img src="images/placeholder2.jpg" alt="Mercy — Cracked Gaze">
+          <h3>Mercy — Cracked Gaze</h3>
+          <div class="meta">Distressed porcelain, hand-stitched dress</div>
+          <div class="price">$195</div>
+          <button class="adopt" onclick="openAdopt('Mercy — Cracked Gaze')">Adopt the Specimen</button>
+        </article>
+        <article class="card">
+          <img src="images/placeholder3.jpg" alt="Marigold — Cabinet Curio">
+          <h3>Marigold — Cabinet Curio</h3>
+          <div class="meta">Boxed display, embroidered initials</div>
+          <div class="price">$310</div>
+          <button class="adopt" onclick="openAdopt('Marigold — Cabinet Curio')">Adopt the Specimen</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="
